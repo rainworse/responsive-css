@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-image: url(./assets/background.png);
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 60px;
+}
+
+.image-and-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-image {
+  max-width: 600px;
+
+  position: relative;
+  z-index: 2;
+
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.301);
+}
+
+.about-name {
+  color: white;
+  font-size: 60px;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.452);
+
+  align-self: center;
+  margin-top: -75px;
+  position: relative;
+  z-index: 3;
+}
+
+.about-me-content {
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.301);
+  background-color: white;
+
+  padding-top: 45px;
+  padding-right: 45px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+
+  max-width: 730px;
+  min-height: 450px;
+}
+
+.about-header {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.about-text {
+  color: rgba(0, 0, 0, 0.562);
+  font-size: 28px;
+  line-height: 40px;
+
+  margin-bottom: 30px;
+}
+
+.about-socials {
+  align-self: flex-end;
+  margin-top: auto;
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.social-button {
+  width: 45px;
+  height: 45px;
+
+  background: none;
+  background-size: 45px;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.github {
+  background-image: url(./assets/github.svg);
+}
+
+.linkedin {
+  background-image: url(./assets/linkedin.svg);
+}
+
+.twitter {
+  background-image: url(./assets/twitter.svg);
+}
+
+.external {
+  background-image: url(./assets/external.svg);
+}
+
+.my-work {
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px;
+  margin-top: 70px;
+}
+
+.my-work-header {
+  font-size: 50px;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+.my-work-projects {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  max-width: 425px;
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.301);
+}
+
+.project-image {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: brown;
+  color: white;
+  font-size: 50px;
+}
+
+.project-details {
+  padding: 20px;
+  height: 175px;
+}
+
+.project-title-and-links {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.project-name {
+  font-size: 30px;
+}
+
+.project-links {
+  margin-left: auto;
+  display: flex;
+  width: 80px;
+  justify-content: space-between;
+}
+
+.project-links > .social-button {
+  width: 30px;
+  height: 30px;
+
+  background-size: 30px;
+}
+
+.project-description {
+  color: rgba(0, 0, 0, 0.685);
+  font-size: 20px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #0891b2;
+  padding: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-text {
+  color: white;
+  font-size: 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 30px;
+}
+
+.footer-header {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.address {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.footer .icon {
+  width: 30px;
+  margin-right: 20px;
+}
+
+.footer-phone-details,
+.footer-email-details {
+  display: flex;
+}
+
+.footer-phone-details {
+  margin-bottom: 20px;
+}
+
+.footer-email-details {
+  margin-bottom: 40px;
+}
+
+.footer-socials > button {
+  margin-right: 30px;
+}
+
+.footer-image {
+  width: 800px;
+  height: 625px;
+}
+
+@media (max-width: 800px) {
+  .about-me {
+    display: initial;
+  }
+
+  .image-and-name {
+    float: left;
+    z-index: 1;
+  }
+
+  .profile-image {
+    width: 305px;
+    margin-left: 30px;
+  }
+
+  .about-name {
+    font-size: 35px;
+  }
+
+  .about-me-content {
+    position: relative;
+    top: -20px;
+    display: inline-block;
+    padding: 0;
+    box-sizing: content-box;
+    width: 400px;
+  }
+
+  .about-me-content-wrapper {
+    background-color: white;
+  }
+
+  .about-socials {
+    display: none;
+  }
+}
