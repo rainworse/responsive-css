@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="footer-text">
+      <div className="footer-text-content">
         <div className="footer-header">Contact me</div>
         <div className="footer-text">
           Please get in touch if you think our
@@ -9,7 +9,7 @@ const Footer = () => {
           work could be mutually beneficial😢
         </div>
         <div className="address">
-          1234 Random Road <br />
+          1234 Random Road <br className="optional-line-break" />
           Random Town, California 12345
         </div>
         <div className="footer-phone-details">
@@ -37,16 +37,15 @@ const Footer = () => {
       <div className="footer-image-container">
         <picture>
           <source
-            srcSet="src\assets\mar-cropped.jpg"
+            srcSet="src\assets\mar-cropped.png"
             media="(max-width: 799px)"
           />
-          <source srcSet="src\assets\mar.jpg" media="(min-width: 800px)" />
+          <source srcSet="src\assets\mar.png" media="(min-width: 800px)" />
           <img
             className="footer-image"
-            src="src\assets\mar.jpg"
+            src="src\assets\mar.png"
             alt="image of me"
           />
-          "
         </picture>
       </div>
     </div>
